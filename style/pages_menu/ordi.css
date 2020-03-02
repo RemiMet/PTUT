@@ -1,0 +1,143 @@
+    /*HEADER*/
+
+.menumobile {
+    display: none;
+}
+
+.icomenu {
+    display: none;
+}
+
+
+/*logo*/
+
+.logo {
+    width: 70%;
+    position: relative;
+    left: 1%;
+}
+
+
+/* */
+
+body>header>a {
+    grid-area: liens;
+    display: block;
+    font-size: 170%;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding-left: 5%;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+header>a:hover {
+    transition: 0.2s;
+    color: #e53935;
+}
+
+
+/*CONCEPT*/
+
+.principale {
+    display: inline-flex;
+    flex: wrap;
+}
+
+iframe {
+    height: 500px;
+}
+
+#leconcept {
+    background-color: white;
+    display: inline-flex;
+    flex: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1%;
+}
+
+#leconcept>img {
+    width: 100%;
+    padding: 5%;
+    display: inline-flex;
+    flex: wrap;
+    justify-content: center;
+}
+
+.texteconcept {
+    font-size: 130%;
+}
+
+
+/*Notre equipe*/
+
+#titreequipe {
+    margin-top: 8%;
+}
+
+.equipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+}
+
+.profil {
+    display: inline-flex;
+}
+
+.profil>p {
+    margin-left: 0.8%;
+    font-size: 150%;
+}
+
+
+/* ACTU */
+
+.article>div {
+    font-size: 160%;
+}
+
+
+/* CONTACT */
+
+#titrecontact {
+    
+}
+
+.formulaire>div {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+    white-space: nowrap;
+}
+
+input {
+    margin: 2%;
+    font-size: 70%;
+}
+
+label {
+    margin-top: 1%;
+}
+
+#msg {
+    height: 50vh;
+    font-size: 110%;
+}
+
+input[type=submit] {
+    margin-top: 2%;
+    width: 15%;
+    font-size: 100%;
+    border: none;
+    /*onclick*/

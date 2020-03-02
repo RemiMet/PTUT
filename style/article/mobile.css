@@ -1,0 +1,160 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px auto;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* MENU POUR MOBILE*/
+
+.menumobile {
+    z-index: 2;
+    position: absolute;
+    visibility: hidden;
+    transition-delay: 0.4s;
+    transition-duration: 0.2s;
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.menumobileACTIVER {
+    visibility: visible;
+    background-color: #e04e53;
+    opacity: 1;
+}
+
+.menumobile>div {
+    top: 10%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menumobile>div>a {
+    text-decoration: none;
+    color: white;
+    font-size: 160%;
+    margin: 8%;
+}
+
+
+/*ICONE DU MENU*/
+
+.icomenu {
+    height: 40%;
+    width: 40%;
+    grid-area: ico;
+    margin-left: 2%;
+    transition-duration: 1s;
+}
+
+
+/*HEADER*/
+
+header {
+    background-color: white;
+    display: grid;
+    box-shadow: 0px 5px 10px rgb(116, 116, 116);
+    height: 10vh;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 10vh;
+    grid-template-areas: "ico logo";
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+header>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 28%;
+    grid-area: logo;
+}
+
+body>header>a {
+    display: none;
+}
+
+body>header>a:hover {
+    color: #686868;
+}
+
+
+/*bloc article*/
+
+main {
+    margin-top: 30px;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+}
+
+main>h1 {
+    padding: 10px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+main>h3 {
+    padding: 10px;
+    display: inline-flex;
+    justify-content: center;
+    color: #686868;
+}
+
+.texteimage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.texteimage>p {
+    margin: 10px;
+    width: 600px;
+    font-size: 17px
+}
+
+.texteimage>img {
+    margin: 10px;
+    border: 3px solid;
+}
+
+.texteimage>div {
+    margin-top: 30px;
+    width: 70%;
+    font-size: 17px
+}
+
+
+/*Footer*/
+
+footer {
+    margin-top: 30px;
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}

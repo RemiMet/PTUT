@@ -1,0 +1,82 @@
+/*HEADER*/
+
+.menumobile {
+    display: none;
+}
+
+.icomenu {
+    display: none;
+}
+
+
+/*logo*/
+
+.logo {
+    width: 70%;
+    position: relative;
+    left: 1%;
+}
+
+
+/* */
+
+body>header>a {
+    grid-area: liens;
+    display: block;
+    font-size: 170%;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding-left: 5%;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+header>a:hover {
+    transition: 0.2s;
+    color: #e53935;
+}
+
+
+/*Taille d'origine pour l'image*/
+
+body>header>img {
+    width: 20%;
+}
+
+.texteimage>img {
+    width: initial;
+}
+
+
+/*MAP*/
+
+#map {
+    max-width: 60%;
+    margin-bottom: 2%;
+}
+
+
+/*Button site*/
+
+.siteclient {
+    width: 20%;
+    font-size: 130%;
+    padding: 1%;
+}
+
+.siteclient>div {
+    width: 25%;
+}
+
+
+/* FOOTER */
+
+footer {
+    z-index: 1000;
+}

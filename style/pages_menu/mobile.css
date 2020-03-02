@@ -1,0 +1,296 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px auto;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* MENU POUR MOBILE*/
+
+.menumobile {
+    z-index: 2;
+    position: absolute;
+    visibility: hidden;
+    transition-delay: 0.4s;
+    transition-duration: 0.2s;
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.menumobileACTIVER {
+    visibility: visible;
+    background-color: #e04e53;
+    opacity: 1;
+}
+
+.menumobile>div {
+    top: 10%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menumobile>div>a {
+    text-decoration: none;
+    color: white;
+    font-size: 160%;
+    margin: 8%;
+}
+
+
+/*ICONE DU MENU*/
+
+.icomenu {
+    height: 40%;
+    width: 40%;
+    grid-area: ico;
+    margin-left: 2%;
+    transition-duration: 1s;
+}
+
+
+/*HEADER*/
+
+header {
+    background-color: white;
+    display: grid;
+    box-shadow: 0px 5px 10px rgb(116, 116, 116);
+    height: 10vh;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 10vh;
+    grid-template-areas: "ico logo";
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+header>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 28%;
+    grid-area: logo;
+}
+
+body>header>a {
+    display: none;
+}
+
+body>header>a:hover {
+    color: #686868;
+}
+
+
+/*CONCEPT*/
+
+.principale {
+    display: block;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+#leconcept {
+    background-color: white;
+    display: block;
+    padding: 1%;
+}
+
+.texteconcept {
+    text-align: center;
+    margin-left: 0.1%;
+    font-size: 100%;
+}
+
+.texteconcept strong {
+    color: #e04e53;
+    font-size: 250%;
+}
+
+#leconcept>div>div:nth-child(3) {
+    margin-top: 10%;
+}
+
+#leconcept>img {
+    display: none;
+}
+
+iframe {
+    margin-top: 10%;
+    width: 100%;
+    height: 500px;
+}
+
+
+/*Notre equipe*/
+
+#titreequipe {
+    margin-top: 15%;
+    background-color: white;
+    width: 100%;
+    display: inline-flex;
+    flex: wrap;
+    justify-content: center;
+}
+
+.equipe {
+    margin-top: 2%;
+    display: block;
+}
+
+.profil {
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    display: block;
+}
+
+.profil>img {
+    border-style: solid;
+    border-color: white;
+}
+
+p {
+    text-align: center;
+}
+
+i {
+    color: #686868;
+}
+
+p>a {
+    color: #7f0000;
+    text-decoration: none;
+}
+
+
+/* ACTU */
+
+#titreactu {
+    background-color: white;
+    width: 100%;
+    display: inline-flex;
+    flex: wrap;
+    justify-content: center;
+}
+
+.partenaire {
+    background-color: white;
+    margin: 2%;
+    padding: 2%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#titrepartenaire {
+    margin-top: 15%;
+    background-color: white;
+    width: 100%;
+    display: inline-flex;
+    flex: wrap;
+    justify-content: center;
+}
+
+.article {
+    background-color: white;
+    margin: 2%;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+body>div.article>div {
+    background-color: #e04e53;
+    width: 80%;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+/* CONTACT */
+
+#titrecontact {
+
+    background-color: white;
+    width: 100%;
+    display: inline-flex;
+    flex: wrap;
+    justify-content: center;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    color: black;
+    font-size: 140%;
+    width: 60%;
+    height: 100vh;
+}
+
+.formulaire>div {
+    width: 33%;
+}
+
+label {
+    margin-top: 4%;
+}
+
+#msg {
+    height: 50vh;
+}
+
+input[type=submit] {
+    margin-top: 4%;
+    font-size: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+input[type=submit]:hover {
+    background-color: #e53935;
+    color: white;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 2%;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 5px 10px black;
+    text-align: center;
+}
+
+footer div img {
+    padding: 2%;
+}
